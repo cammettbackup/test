@@ -1,0 +1,14 @@
+---
+sidebar: sidebar
+permalink: index.html
+summary: Welcome to the documentation portal for Demo Product.
+---
+
+= Demo Product Documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+Demo product will solve all of your life problems. This is a test site. 

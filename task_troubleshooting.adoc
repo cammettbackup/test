@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: task_troubleshooting.html
+keywords: task, demo, troubleshoot
+summary: This is a demo topic on troubleshooting.
+---
+
+= Troubleshooting the demo product
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The demo product will report errors through the management console. This is a test topic used for troubleshooting.
+
+== Troubleshooting Errors
+
+You can troubleshoot the demo product via the error console. 

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: task_install.html
+keywords: task, demo, install
+summary: This is a demo topic on installation.
+---
+
+= Installing the demo product
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The demo product can be installed within 5 minutes. This is a test topic used for troubleshooting. 
+
+== Configuring Account
+
+You can configure an account through the global settings.
