@@ -16,7 +16,9 @@ before_install:
   ls -al _nl;
   fi
 - gem update --system && gem install bundler && gem update bundler
+- echo "Pull Request? $TRAVIS_PULL_REQUEST | Branch [$TRAVIS_PULL_REQUEST_BRANCH]";
 - if [[ "$TRAVIS_BRANCH" =~ master && $TRAVIS_PULL_REQUEST -eq 0 && -z "$TRAVIS_PULL_REQUEST_BRANCH" ]]; then
+  echo "Site Translation Enabled";
   mv -f dependencies/jekyll/_nl/mantra.rb dependencies/jekyll/_plugins/mantra.rb;
   mv -f dependencies/jekyll/_nl/na-l10n.rb dependencies/jekyll/_plugins/na-i18n.rb;
   mv -f dependencies/jekyll/_config.stage.yml dependencies/jekyll/_config.yml;
