@@ -8,7 +8,7 @@ if: branch = master OR repo =~ /-stage/
 before_install:
 - echo -e "machine github.com\n login $GH_TOKEN" > ~/.netrc && chmod 600 ~/.netrc
 - git submodule add https://github.com/NetAppDocs/jekyll dependencies/jekyll
-- branch_exists = $(git ls-remote --heads https://github.com/NetAppDocs/test.git gh-pages)
+- branch_exists=$(git ls-remote --heads https://github.com/NetAppDocs/test.git gh-pages)
 - if [[ ! -z "$branch_exists" ]]; then
   echo "Adding GH Pages Branch";
   git submodule add -b gh-pages https://github.com/NetAppDocs/test _nl;
