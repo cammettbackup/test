@@ -31,4 +31,4 @@ before_install:
   fi
 - mv dependencies/jekyll/prod-build.sh ./ && ./prod-build.sh
 script:
-- bundle exec rake deploy
+- bundle exec rake deploy --trace
