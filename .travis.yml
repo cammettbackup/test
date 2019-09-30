@@ -30,5 +30,6 @@ before_install:
   unset MT_SECRET;
   fi
 - mv dependencies/jekyll/prod-build.sh ./ && ./prod-build.sh
+- cat ./_config.yml;
 script:
 - bundle exec rake deploy --trace
