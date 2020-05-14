@@ -20,10 +20,11 @@ before_install:
 - echo "Determining Sites"
 - ls -al .
 - pwd
-install:
-- mkdir -p /tmp/output
-# - bundle
+# install:
+# - mkdir -p /tmp/output
+# - bundle install
 script:
+- mkdir -p /tmp/output
 - bundle exec jekyll build --destination /tmp/output
 deploy:
   provider: pages
