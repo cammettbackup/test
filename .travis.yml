@@ -20,12 +20,15 @@ before_install:
 - echo "Determining Sites"
 - ls -al .
 - pwd
+install:
+- mkdir -p /tmp/output
+- bundle exec jekyll build --destination /tmp/output
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN
   keep_history: false
-  local_dir: $TRAVIS_BUILD_DIR
+  local_dir: /tmp/output
   target_branch: $DEPLOY_BRANCH
   verbose: true
   on:
