@@ -9,20 +9,14 @@ before_install:
 - git submodule add https://github.com/NetAppDocs/jekyll dependencies/jekyll
 - gem update --system && gem install bundler && gem update bundler
 - echo "Pull Request? $TRAVIS_PULL_REQUEST | Branch [$TRAVIS_PULL_REQUEST_BRANCH]";
+- if [[ -z "$DEPLOY_BRANCH" ]]; then export DEPLOY_BRANCH=gh-pages; fi
 - if [[ "$TRAVIS_BRANCH" =~ master && $TRAVIS_PULL_REQUEST -eq 0 && -z "$TRAVIS_PULL_REQUEST_BRANCH" ]]; then
   echo "Deploying content";
   mv -f dependencies/jekyll/_config.occm.yml dependencies/jekyll/_config.yml;
-  export DEPLOY_BRANCH=gh-pages;
   else
   echo "Skipping Deployment";
   fi
 - mv dependencies/jekyll/prod-build.sh ./ && ./prod-build.sh
-- echo "Determining Sites"
-- ls -al .
-- pwd
-# install:
-# - mkdir -p /tmp/output
-# - bundle install
 script:
 - mkdir -p /tmp/output
 - bundle exec jekyll build --destination /tmp/output
@@ -35,4 +29,4 @@ deploy:
   target_branch: $DEPLOY_BRANCH
   verbose: true
   on:
-    branch: master
+    all_branches: true
