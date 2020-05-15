@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/test/</loc>
+      
+      <lastmod>2019-09-24T20:14:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/test//search.html</loc>
+      
+      <lastmod>2020-05-15T02:43:09+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/test/task_install.html</loc>
+      
+      <lastmod>2019-09-24T20:14:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/ja-jp/test/task_troubleshooting.html</loc>
+      
+      <lastmod>2019-09-24T20:14:22+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
