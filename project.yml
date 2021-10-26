@@ -1,6 +1,7 @@
 ---
 settings:
-  name: ''
+  name: 'Test Site'
+  noindex: true
   internal:
     pdf_enabled: false
   prod:
