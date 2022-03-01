@@ -55,7 +55,7 @@
       },
       "get": {
         "x-doc": {
-          "title": "Retrieve existing indexes"
+          "title": "Retrieve existing indexes",
           "category": "index",
           "filename": "get-persistence-v1-service-collection-index.html",
           "explorer": false
