@@ -247,7 +247,7 @@
     "/tenancy/resource/{resourceIdentifier}/account/{accountId}/set-resource-name": {
       "post": {
         "x-doc": {
-          "title": "Sets the name of a resource",
+          "title": "Set a resource name",
           "category": "Resource",
           "filename": "post-tenancy-resource-account-set-resource-name.html"
         }
