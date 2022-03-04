@@ -1,67 +1,14 @@
+---
 settings:
-  # Set PRODUCT_NAME variable
-  name: "Cloud Manager Automation"
-  
-  # Set FRAMEWORK_VERSION variable, optional, default = "v2"
-  #version: "v2"  
-  
-  # Set PROJECT_PLATFORM variable, optional, default = "astra" 
+  name: Cloud Manager Automation
   platform: ''
-  
-  # Set RSS_UPDATES_FILE variable, optional, default unset
-  #rss_page: "release-notes/whats-new.html"
-  
-  # Set SUBPROJECT variable, optional, default unset
-  #subproject: ..... 
-  
-  # Set RELEASE_NOTES variable, optional, default unset
-  #release_notes: true
-  
-  # Set NSS_PRODUCT variable, optional, default unset
-  #nss_product: OnCommand Cloud Manager
-  
-  # Set DOWNLEVEL variable, optional, default unset
-  #downlevel: false
-  
-  #search: ...
-  #search_indexes: ...
-  
-  # Set NOINDEX variable, optional, default unset
   noindex: true
-  
-  
   internal:
-    # Set FEATURE_FLAG / PDF_ENABLED variables, optional, default: false
-    pdf_enabled: true
-    
-    # Unset GH_API_TOKEN or set to empty, optional, default: false
-    #avatars_enabled: true
-    
-    # Set LANGS variable, optional, default unset
-    #langs: "us-en,es-es,ja-jp"
-    
-    # Set HARMONY_FLAG / HARMONY_ENABLED variables, optional, default unset
-    #harmony_enabled: true
-
-    # api_enabled controls the automatic generation of Open API spec
-    api_enabled: true
-    
-  prod:
-    # Set FEATURE_FLAG / PDF_ENABLED variables, optional, default: true
     pdf_enabled: false
-    
-    # Unset GH_API_TOKEN or set to empty, optional, default: true
-    avatars_enabled: true
-
-    # Set LANGS variable, optional, default unset
-    # langs: "us-en,ko-kr,es-es,ja-jp"
-    
-    # Set HARMONY_FLAG / HARMONY_ENABLED variables, optional, default unset
-    harmony_enabled: false
-
-    # api_enabled controls the automatic generation of Open API spec
     api_enabled: true
-  
+  prod:
+    pdf_enabled: false
+    api_enabled: true
 sidebar:
   entries:
     - title: Cloud Manager API docs
@@ -73,3 +20,6 @@ sidebar:
     - section: support
     - title: Legal notices
       url: /legal-notices.html
+
+homepage:
+  tiles:

@@ -247,7 +247,7 @@
     "/tenancy/resource/{resourceIdentifier}/account/{accountId}/set-resource-name": {
       "post": {
         "x-doc": {
-          "title": "Sets the name of a resource\n            <br><b>token usage:</b> cloud manager user token",
+          "title": "Sets the name of a resource",
           "category": "Resource",
           "filename": "post-tenancy-resource-account-set-resource-name.html"
         }

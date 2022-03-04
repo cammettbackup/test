@@ -26,11 +26,11 @@ This workflow describes how to create an access token when using federated authe
 
 Review the parameters in the *JSON input example* for the second workflow step. In particular, you must have the client identifier.
 
-=== 1. Generate a NetApp refresh token
+== 1. Generate a NetApp refresh token
 
 Navigate to https://services.cloud.netapp.com/refresh-token[Refresh Token Generator^] and generate a long-lived token. You need to provide this in the `refresh_token` JSON input parameter in the next step.
 
-=== 2. Generate the user token
+== 2. Generate the user token
 
 This API call uses the _Auth0_ authentication service and not the NetApp Cloud Manager service. See the URL in the curl example below and adjust for your environment as needed.
 
@@ -81,7 +81,7 @@ This workflow describes how to create an access token when using non-federated a
 
 Review the parameters in the *JSON input example* for the first workflow step. In particular, you must have the account credentials and the client identifier.
 
-=== 1. Generate the user token
+== 1. Generate the user token
 
 This API call uses the _Auth0_ authentication service and not the NetApp Cloud Manager service. See the URL in the curl example below and adjust for your environment as needed.
 

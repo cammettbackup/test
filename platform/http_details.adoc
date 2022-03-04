@@ -17,7 +17,7 @@ The Cloud Manager platform REST APIs are based on the HTTP protocol as well as J
 
 == Request
 
-==== HTTP methods
+=== HTTP methods
 
 The HTTP methods supported by the Cloud Manager platform REST APIs are shown in the following table. Not all HTTP methods are available at each of the REST endpoints. For more information, see the reference documentation for the specific API you are using.
 
@@ -37,7 +37,7 @@ The HTTP methods supported by the Cloud Manager platform REST APIs are shown in 
 |Deletes an existing resource instance.
 |===
 
-==== Request headers
+=== Request headers
 
 The common HTTP request headers are described below.
 
@@ -57,7 +57,7 @@ The common HTTP request headers are described below.
 
 == Response
 
-==== HTTP status codes
+=== HTTP status codes
 
 The common HTTP status codes are described below.
 
