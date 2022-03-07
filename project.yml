@@ -16,8 +16,8 @@ sidebar:
     - section: platform
     - section: workflows
     - section: api-cm
-    - section: tenancy
     - section: persistence
+    - section: tenancy
     - section: automate
     - section: support
     - title: Legal notices
