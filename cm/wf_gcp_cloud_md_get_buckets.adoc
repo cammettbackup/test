@@ -15,7 +15,7 @@ summary: You can perform this workflow to retrieve the S3 buckets.
 [.lead]
 You can perform this workflow to retrieve the S3 buckets. The S3 buckets are the GCP storage buckets (data containers in GCP) required for data tiering and backups.
 
-=== 1. Get the buckets
+== 1. Get the buckets
 
 [cols="25,75"*,options="header"]
 |===

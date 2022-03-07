@@ -23,7 +23,7 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get Azure storage account types for single node
 You can perform this workflow to retrieve the Azure storage account types for a single node working environment.
 
-=== 1. Get the storage account types
+== 1. Get the storage account types
 
 [cols="25,75"*,options="header"]
 |===
@@ -252,7 +252,7 @@ JSON output example::
 == Get Azure storage account types for high availability pair
 You can perform this workflow to retrieve the Azure storage account types for an HA working environment.
 
-=== 1. Get the storage account types
+== 1. Get the storage account types
 
 [cols="25,75"*,options="header"]
 |===

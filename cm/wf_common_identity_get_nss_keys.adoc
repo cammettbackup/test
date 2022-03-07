@@ -15,11 +15,11 @@ summary: "You can retrieve all of the available NetApp Support Site credential k
 [.lead]
 You can retrieve all of the available NetApp Support Site credential keys.
 
-=== 1. Select the account to use
+== 1. Select the account to use
 
 Perform the workflow link:wf_common_identity_get_provider_accounts.html[Get cloud provider accounts] and choose the `accountId` value for the path parameter.
 
-=== 2. Retrieve the NSS keys
+== 2. Retrieve the NSS keys
 
 [cols="25,75"*,options="header"]
 |===

@@ -15,13 +15,13 @@ summary: 'You can use this workflow to create a new Cloud Volumes ONTAP working 
 [.lead]
 You can use this workflow to create a new Cloud Volumes ONTAP working environment using bring-your-own-license (BYOL) licensing.
 
-=====
+====
 *Note the following when using BYOL licensing*:
 
 * A marketplace subscription is not required.
 * A NetApp Support Site (NSS) key is required to register the system for support.
 * You can add more volumes after creating the working environment. You can choose to create a volume using either link:wf_azure_ontap_create_vol_nfs.html[NFS], link:wf_azure_ontap_create_vol_cifs.html[CIFS], or link:wf_azure_ontap_create_vol_iscsi.html[iSCSI] protocol.
-=====
+====
 
 Choose the correct workflow depending on the type of Cloud Volumes ONTAP deployment:
 
@@ -31,15 +31,15 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Create working environment for single node
 You can use this workflow to create single node working environment with BYOL licensing.
 
-=== 1. Select the region
+== 1. Select the region
 
 Perform the workflow link:wf_azure_cloud_md_get_regions.html#get-azure-regions-for-single-node[Get regions] and choose the `name` value of the required region for the `region` parameter in step 10.
 
-=== 2. Select the workspace
+== 2. Select the workspace
 
 Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and choose the `workspacePublicId` value for the `tenantId` parameter in step 10.
 
-=== 3. Select the VNets
+== 3. Select the VNets
 
 Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-single-node[Get VNets] and do the following:
 
@@ -49,16 +49,16 @@ Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-s
 *	Choose the `id` of the desired security group from the `securityGroups` field for the `securityGroupId` parameter in step 10.
 
 
-=== 4. Select the Azure availability zone
+== 4. Select the Azure availability zone
 
 Perform the workflow link:wf_azure_cloud_md_get_availability_zones.html#get-availability-zones-for-single-node[Get Availability Zones] and choose the number from `zones` for the `availabilityZone` parameter in step 10.
 
-=== 5. Select Azure packages configuration
+== 5. Select Azure packages configuration
 
 Perform the link:wf_azure_cloud_md_get_packages.html#get-packages-for-single-node[Get Azure Packages] workflow and choose the `name` of the desired package item for the `packageName` parameter.
 
 
-=== 6. Obtain the required NSS key
+== 6. Obtain the required NSS key
 
 An NSS key is *required* when using BYOL licensing. You can create a key or select an existing key, and include the NSS key in the `nssAccount` parameter in step 10.
 
@@ -66,11 +66,11 @@ An NSS key is *required* when using BYOL licensing. You can create a key or sele
 
 * To select an existing NSS key, perform the workflow link:wf_common_identity_get_nss_keys.html[Get NSS keys] and choose the `id` of the required NSS user.
 
-=== 7. Select the Azure cloud provider accounts
+== 7. Select the Azure cloud provider accounts
 
 Perform the link:wf_azure_cloud_md_create_account.html[Get Azure Cloud Provider Accounts] workflow and choose the `publicId` of the desired cloud provider account item from the `azureAccounts` for the `cloudProviderAccount` parameter.
 
-=== 8. Select the Azure permutations
+== 8. Select the Azure permutations
 
 Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-single-node[Get Azure Permutations] workflow and pick the desired permutation:
 
@@ -79,7 +79,7 @@ Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-si
 *	Choose the `instanceType` of the desired permutation for the `instanceType` field inside the `vsaMetadata` parameter in step 10.
 
 You will also need to include the `serialNumber` value in the REST API call.
-=== 9. Select the Azure storage account types
+== 9. Select the Azure storage account types
 
 Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-single-node[Get Azure Storage Account Types] workflow and pick the desired storage type.
 
@@ -88,7 +88,7 @@ Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-stor
 *	Choose the `unit` of the desired disk size from the `sizes` -> `size` field for the `unit` field inside the `diskSize` parameter in step 10.
 
 
-=== 10. Create the working environment
+== 10. Create the working environment
 
 [cols="25,75"*,options="header"]
 |===
@@ -180,15 +180,15 @@ JSON output example::
 == Create working environment for high availability pair
 You can use this workflow to create an HA working environment with BYOL licensing.
 
-=== 1. Select the region
+== 1. Select the region
 
 Perform the workflow link:wf_azure_cloud_md_get_regions.html#get-azure-regions-for-high-availability-pair[Get regions] and choose the `name` value of the required region for the `region` parameter in step 10.
 
-=== 2. Select the workspace
+== 2. Select the workspace
 
 Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and choose the `workspacePublicId` value for the `tenantId` parameter in step 10.
 
-=== 3. Select the VNets
+== 3. Select the VNets
 
 Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-high-availability-pair[Get VNets] and do the following:
 
@@ -198,16 +198,16 @@ Perform the workflow link:wf_azure_cloud_md_get_vnets.html#get-azure-vnets-for-h
 *	Choose the `id` of the desired security group from the `securityGroups` field for the `securityGroupId` parameter in step 10.
 
 
-=== 4. Select the Azure availability zone
+== 4. Select the Azure availability zone
 
 Perform the workflow link:wf_azure_cloud_md_get_availability_zones.html#get-availability-zones-for-high-availability-pair[Get Availability Zones] and choose the number from `zones` for the `availabilityZone` parameter in step 10.
 
-=== 5. Select Azure packages configuration
+== 5. Select Azure packages configuration
 
 Perform the link:wf_azure_cloud_md_get_packages.html#get-packages-for-high-availability-pair[Get Azure Packages] workflow and choose the `name` of the desired package item for the `packageName` parameter.
 
 
-=== 6. Obtain the required NSS key
+== 6. Obtain the required NSS key
 
 An NSS key is *required* when using BYOL licensing. You can create a key or select an existing key, and include the NSS key in the `nssAccount` parameter in step 10.
 
@@ -215,11 +215,11 @@ An NSS key is *required* when using BYOL licensing. You can create a key or sele
 
 * To select an existing NSS key, perform the workflow link:wf_common_identity_get_nss_keys.html[Get NSS keys] and choose the `id` of the required NSS user.
 
-=== 7. Select Azure cloud provider accounts
+== 7. Select Azure cloud provider accounts
 
 Perform the link:wf_azure_cloud_md_create_account.html[Get Azure Cloud Provider Accounts] workflow and choose the `publicId` of the desired cloud provider account item from the `azureAccounts` for the `cloudProviderAccount` parameter.
 
-=== 8. Select the Azure permutations
+== 8. Select the Azure permutations
 
 Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-high-availability-pair[Get Azure Permutations] workflow and pick the desired permutation:
 
@@ -228,7 +228,7 @@ Perform the link:wf_azure_cloud_md_get_permutations.html#get-permutations-for-hi
 *	Choose the `instanceType` of the desired permutation for the `instanceType` field inside the `vsaMetadata` parameter in step 10.
 
 You will also need to include the `serialNumber` value in the REST API call.
-=== 9. Select the Azure storage account types
+== 9. Select the Azure storage account types
 
 Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-storage-account-types-for-high-availability-pair[Get Azure Storage Account Types] workflow and pick the desired storage type.
 
@@ -237,7 +237,7 @@ Perform the link:wf_azure_cloud_md_get_storage_account_types.html#get-azure-stor
 *	Choose the `unit` of the desired disk size from the `sizes` -> `size` field for the `unit` field inside the `diskSize` parameter in step 10.
 
 
-=== 10. Create the working environment
+== 10. Create the working environment
 
 [cols="25,75"*,options="header"]
 |===

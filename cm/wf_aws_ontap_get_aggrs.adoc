@@ -23,11 +23,11 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get aggregates for single node
 You can use this workflow to retrieve the aggregates for a single node working environment.
 
-=== 1. Select the working environment to use
+== 1. Select the working environment to use
 
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-working-environments-for-single-node[Get working environments] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the list of aggregates
+== 2. Get the list of aggregates
 
 [cols="25,75"*,options="header"]
 |===
@@ -122,11 +122,11 @@ JSON output example::
 == Get aggregates for high availability pair
 You can use this workflow to retrieve the aggregates for an HA working environment.
 
-=== 1. Select the working environment to use
+== 1. Select the working environment to use
 
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-working-environment-for-high-availability-pair[Get working environments] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the list of aggregates
+== 2. Get the list of aggregates
 
 [cols="25,75"*,options="header"]
 |===

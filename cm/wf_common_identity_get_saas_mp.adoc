@@ -22,7 +22,7 @@ Every cloud account can _optionally_ have a subscription associated with it. The
 [NOTE]
 Each cloud account can have exactly zero or one subscription. You must have a subscription when creating a working environment using PAYGO ("pay as you go").
 
-=== 1. Get the SaaS accounts
+== 1. Get the SaaS accounts
 
 [cols="25,75"*,options="header"]
 |===

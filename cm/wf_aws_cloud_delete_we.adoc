@@ -25,11 +25,11 @@ Choose the correct workflow depending on the type of the Cloud Volumes ONTAP dep
 
 You can use this workflow to delete a working environment for a single node system.
 
-=== 1. Select the working environment to use
+== 1. Select the working environment to use
 
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-working-environment-for-single-node[Get working environments] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Delete the working environment
+== 2. Delete the working environment
 
 [cols="25,75"*,options="header"]
 |===
@@ -65,11 +65,11 @@ None
 
 You can use this workflow to delete a working environment for an HA pair.
 
-=== 1. Select the working environment to use
+== 1. Select the working environment to use
 
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-working-environment-for-high-availability-pair[Get working environments] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Delete the working environment
+== 2. Delete the working environment
 
 [cols="25,75"*,options="header"]
 |===

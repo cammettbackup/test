@@ -15,12 +15,12 @@ summary: "You can use this workflow to retrieve the SnapMirror policies based on
 [.lead]
 You can use this workflow to retrieve the SnapMirror policies based on the source and destination Cloud Volume ONTAP instances.
 
-=== 1. Select the working environment to use
+== 1. Select the working environment to use
 
 *>> UPDATE*
 Perform the workflow link:wf_aws_cloud_1n_get_wes_.html[Get working environments] and choose the `publicId` values for the working environments and destination volume name.
 
-=== 2. Get the SnapMirror policies
+== 2. Get the SnapMirror policies
 
 [cols="25,75"*,options="header"]
 |===

@@ -15,7 +15,7 @@ summary: 'You can use this workflow to create a new Cloud Volumes ONTAP working 
 [.lead]
 You can create a new Cloud Volumes ONTAP working environment using pay-as-you-go (PAYGO) subscription. You can add new volumes when creating the working environment.
 
-====
+===
 *Note the following when using PAYGO*:
 
 * A marketplace subscription is required.
@@ -23,7 +23,7 @@ You can create a new Cloud Volumes ONTAP working environment using pay-as-you-go
 //* A new volume can also be created with this working environment.
 * You can add more volumes after creating the working environment. You can add volumes using the link:wf_aws_ontap_create_vol_nfs.html[NFS], link:wf_aws_ontap_create_vol_cifs.html[CIFS] or the link:wf_aws_ontap_create_vol_iscsi.html[iSCSI] protocol.
 
-====
+===
 
 Choose the correct workflow depending on the type of the Cloud Volumes ONTAP deployment:
 
@@ -34,36 +34,36 @@ Choose the correct workflow depending on the type of the Cloud Volumes ONTAP dep
 
 You can use this workflow to create an single node Cloud Volumes ONTAP working environment.
 
-=== 1. Select the region
+== 1. Select the region
 
 Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-single-node[Get regions] and choose the `code` value for the `region` parameter in step 9.
 
-=== 2. Select the workspace
+== 2. Select the workspace
 
 Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and choose the `workspacePublicId` value for the `tenantId` parameter in step 9.
 
-=== 3. Select the permutations configuration
+== 3. Select the permutations configuration
 
 Perform the workflow link:wf_aws_cloud_md_get_permutations.html#get-permutations-for-single-node[Get permutations] and choose the `ontapVersion` and `license: type` and `instanceType` values for the `vsaMetadata` parameter in step 9.
 
-=== 4. Select the VPC
+== 4. Select the VPC
 
 Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-single-node[Get VPCs] and do the following:
 
 * Choose the `vpcId` value for the `vpcId` parameter in step 9.
 * Choose the `cidrBlock` values for the `ips` value of the volume parameter in step 9.
 
-=== 5. Select the EBS volume configuration
+== 5. Select the EBS volume configuration
 
 Perform the workflow link:wf_aws_cloud_md_get_ebs_vol_types.html#get-ebs-volume-types-for-single-node[Get EBS volume types] and choose the `size` and `supportedVolumeTypes` values for the `ebsVolumeSize` and `ebsVolumeType` parameters in step 9.
 
 NOTE: You need to choose one of the allowed values for the required `ebsVolumeType` parameter. We have used `gp2` value for this parameter in step 9.
 
-=== 6. Attach a marketplace subscription
+== 6. Attach a marketplace subscription
 
 Perform the workflow link:wf_common_occm_attach_subscription.html[Attach SaaS subscription].
 
-=== 7. (Optional) Obtain an NSS key
+== 7. (Optional) Obtain an NSS key
 
 An NSS key is optional when using PAYGO licensing. If needed, you can create a key or select an existing key, and include the NSS key in the `nssAccount` parameter in step 9.
 
@@ -71,7 +71,7 @@ An NSS key is optional when using PAYGO licensing. If needed, you can create a k
 
 * To select an existing NSS key, perform the workflow link:wf_common_identity_get_nss_keys.html[Get NSS keys] and choose the `id` of the required NSS user.
 
-=== 8. (Optional) Create a new volume
+== 8. (Optional) Create a new volume
 
 You can optionally add a new volume while creating a working environment.
 
@@ -82,7 +82,7 @@ You can optionally add a new volume while creating a working environment.
 NOTE: If you choose to create a volume using CIFS protocol, you will need to set the `shareInfo` parameter. If you choose to create a volume using iSCSI protocol, you will need to set the `iscsiInfo` parameter accordingly.
 
 
-=== 9. Create the working environment
+== 9. Create the working environment
 
 [cols="25,75"*,options="header"]
 |===
@@ -195,26 +195,26 @@ JSON output example::
 == Create working environment for high availability pair
 You can use this workflow to create an HA Cloud Volumes ONTAP working environment.
 
-=== 1. Select the region
+== 1. Select the region
 
 Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value for the `region` parameter in step 11.
 
-=== 2. Select the cloud provider account
+== 2. Select the cloud provider account
 
 Perform the workflow link:wf_common_identity_get_provider_accounts.html[Get cloud provider accounts] and choose the `publicId` value of the required account for the `cloudProviderAccount` parameter.
 
-=== 3. Select the workspace
+== 3. Select the workspace
 
 Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and choose the `workspacePublicId` value for the `tenantId` parameter in step 12.
 
-=== 4. Select the permutations configuration
+== 4. Select the permutations configuration
 
 Perform the workflow link:wf_aws_cloud_md_get_permutations.html#get-permutations-for-high-availability-pair[Get permutations] and choose the `ontapVersion` and `license: type` and `instanceType` values for the `vsaMetadata` parameter in step 12.
 
-=== 5. Select the packages configuration
+== 5. Select the packages configuration
 Perform the link:wf_aws_cloud_md_get_packages.html[Get Packages] and choose the `packageName`, `instanceTenancy` and `writingSpeedState` values for the corresponding parameters in step 12.
 
-=== 6. Select the VPC
+== 6. Select the VPC
 
 Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-high-availability-pair[Get VPCs] and do the following:
 
@@ -222,21 +222,21 @@ Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-high-availa
 * Choose three subnets and choose the `subnetId` value for the `haParams:mediatorSubnetId`, `haParams:node1SubnetId`, `haParams:node2SubnetId` in step 12.
 * Select the IPs for the `clusterFloatingIP`, `dataFloatingIP`, `dataFloatingIP2` values for the corresponding parameters in step 12.
 
-=== 7. Select route table
+== 7. Select route table
 
 Perform the workflow link:wf_aws_cloud_md_get_route_tables.html[Get route tables] and choose the `id` value of the required route table for `haParams:routeTableIds` parameter is step 12.
 
-=== 8. Select the EBS volume configuration
+== 8. Select the EBS volume configuration
 
 Perform the workflow link:wf_aws_cloud_md_get_ebs_vol_types.html#get-ebs-volume-types-for-high-availability-pair[Get EBS volume types] and choose the `size` and `supportedVolumeTypes` values  for the `ebsVolumeSize` and `ebsVolumeType` parameters in step 12.
 
 NOTE: You need to choose one of the allowed values for the required `ebsVolumeType` parameter. We have used `gp2` value for this parameter in step 12.
 
-=== 9. Attach a marketplace subscription
+== 9. Attach a marketplace subscription
 
 Perform the workflow link:wf_common_occm_attach_subscription.html[Attach SaaS subscription].
 
-=== 10. (Optional) Obtain an NSS key
+== 10. (Optional) Obtain an NSS key
 
 An NSS key is optional when using PAYGO licensing. If needed, you can create a key or select an existing key, and include the NSS key in the `nssAccount` parameter in step 12.
 
@@ -244,7 +244,7 @@ An NSS key is optional when using PAYGO licensing. If needed, you can create a k
 
 * To select an existing NSS key, perform the workflow link:wf_common_identity_get_nss_keys.html[Get NSS keys] and choose the `id` of the required NSS user.
 
-=== 11. (Optional) Create a new volume
+== 11. (Optional) Create a new volume
 
 You can optionally add a new volume while creating a working environment.
 
@@ -254,7 +254,7 @@ You can optionally add a new volume while creating a working environment.
 +
 NOTE: If you choose to create a volume using CIFS protocol, you will need to set the `shareInfo` parameter. If you choose to create a volume using iSCSI protocol, you will need to set the `iscsiInfo` parameter accordingly.
 
-=== 12. Create the working environment
+== 12. Create the working environment
 
 [cols="25,75"*,options="header"]
 |===

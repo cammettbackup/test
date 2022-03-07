@@ -15,11 +15,11 @@ summary: "You can use this workflow to update an existing SnapMirror replication
 [.lead]
 You can use this workflow to update an existing SnapMirror replication relationship.
 
-=== 1. Select the working environment and related values
+== 1. Select the working environment and related values
 
 Perform the workflow link:wf_common_ontap_repl_get_rel_status.html[Get relationships status] and choose the `workingEnvironment` and `svmName` and `volumeName` values for the path parameters. All values are for the destination.
 
-=== 2. Update the relationship
+== 2. Update the relationship
 
 [cols="25,75"*,options="header"]
 |===

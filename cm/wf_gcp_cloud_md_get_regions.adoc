@@ -16,7 +16,7 @@ summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP
 This workflow retrieves the GCP regions in which a Cloud Volumes ONTAP working environment might be created.
 
 
-=== 1. Get the list of regions
+== 1. Get the list of regions
 
 [cols="25,75"*,options="header"]
 |===

@@ -15,15 +15,15 @@ summary: "You can modify the configuration of an existing volume."
 [.lead]
 You can modify the configuration of an existing volume.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_gcp_cloud_get_wes.html[Get working environment] and choose the `publicId`  and `svmName` values of the working environment for used as the `workingEnvironmentId` and `svmName` path parameters.
 
-=== 2. Select the volume
+== 2. Select the volume
 
 Perform the workflow link:wf_gcp_ontap_get_volumes.html[Get volumes] and choose the `name` for the `volumeName` path parameter.
 
-=== 3. Modify the volume
+== 3. Modify the volume
 
 [cols="25,75"*,options="header"]
 |===

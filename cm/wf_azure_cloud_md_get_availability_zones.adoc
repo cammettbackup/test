@@ -26,7 +26,7 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get availability zones for single node
 You can use this workflow to retrieve the availability zones by region for a single node working environment.
 
-=== 1. Get the availability zones
+== 1. Get the availability zones
 
 [cols="25,75"*,options="header"]
 |===
@@ -67,7 +67,7 @@ JSON output example::
 
 You can use this workflow to retrieve the availability zones by region for a high availability pair working environment.
 
-=== 1. Get the availability zones
+== 1. Get the availability zones
 
 [cols="25,75"*,options="header"]
 |===
@@ -108,7 +108,7 @@ JSON output example::
 
 You can use this workflow to retrieve the availability zones by region for a high availability pair working environment.
 
-=== 1. Get the availability zones
+== 1. Get the availability zones
 
 [cols="25,75"*,options="header"]
 |===

@@ -15,7 +15,7 @@ summary: 'You must generate a bearer token to authenticate and access the Cloud 
 [.lead]
 You can perform this workflow to retrieve accounts.
 
-=== 1. Get accounts
+== 1. Get accounts
 
 [cols="25,75"*,options="header"]
 |===

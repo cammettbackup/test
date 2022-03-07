@@ -23,7 +23,7 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get regions for single node
 You can use this workflow to retrieve the regions for a single node system.
 
-=== 1. Get the list of regions
+== 1. Get the list of regions
 
 [cols="25,75"*,options="header"]
 |===
@@ -79,7 +79,7 @@ JSON output example::
 == Get regions for high availability pair
 You can use this workflow to retrieve the regions for an HA pair.
 
-=== 1. Get the list of regions
+== 1. Get the list of regions
 
 [cols="25,75"*,options="header"]
 |===

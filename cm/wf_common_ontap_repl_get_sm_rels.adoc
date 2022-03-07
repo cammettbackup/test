@@ -15,7 +15,7 @@ summary: You can retrieve all the SnapMirror relationship pairs.
 [.lead]
 You can retrieve all the SnapMirror relationship pairs.
 
-=== 1. Retrieve the relationships
+== 1. Retrieve the relationships
 
 [cols="25,75"*,options="header"]
 |===

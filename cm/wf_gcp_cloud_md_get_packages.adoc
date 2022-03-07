@@ -15,7 +15,7 @@ summary: You can use the permutations endpoint to retrieve the Cloud Volumes ONT
 [.lead]
 You can perform this workflow to retrieve the pre-defined packages configuration.
 
-=== 1. Get the packages
+== 1. Get the packages
 
 [cols="25,75"*,options="header"]
 |===

@@ -17,14 +17,14 @@ You can use the route tables endpoint to retrieve the route tables labels for ea
 
 NOTE: We use the Get route tables workflow only for the high availability pair.
 
-=== 1. Get the region
+== 1. Get the region
 
 Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value of the required region for the `region` query parameter.
 
-=== 2. Get the VPC
+== 2. Get the VPC
 Perform the workflow link:wf_aws_cloud_md_get_vpcs.html#get-vpcs-for-high-availability-pair[Get VPCs] and choose the `vpcId` value of the required VPC for the `vpcId` query parameter.
 
-=== 3. Get the route tables
+== 3. Get the route tables
 
 [cols="25,75"*,options="header"]
 |===

@@ -15,7 +15,7 @@ summary: You can perform this workflow to retrieve the S3 buckets.
 [.lead]
 You can perform this workflow to create a new bucket. This is a GCP storage bucket (data container in GCP) required for data tiering and backup.
 
-=== 1. Create a bucket
+== 1. Create a bucket
 
 [cols="25,75"*,options="header"]
 |===

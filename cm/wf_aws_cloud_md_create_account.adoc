@@ -19,11 +19,11 @@ You can use this workflow to create an AWS cloud provider account.
 
 You must have AWS credentials.
 
-=== 1. Get the SaaS marketplace account
+== 1. Get the SaaS marketplace account
 
 Perform the workflow link:wf_common_identity_get_saas_mp.html[Get SaaS marketplace account] and choose the `id` value for the required subscription for `subscriptionId` parameter.
 
-=== 2. Create the account
+== 2. Create the account
 
 [cols="25,75"*,options="header"]
 |===

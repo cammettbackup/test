@@ -25,7 +25,7 @@ Choose the correct workflow depending on the type of the Cloud Volumes ONTAP dep
 
 You can use this workflow to retrieve the working environments' details for a single node system.
 
-=== 1. Get the working environments
+== 1. Get the working environments
 
 [cols="25,75"*,options="header"]
 |===
@@ -166,11 +166,11 @@ JSON output example::
 
 You can use this workflow to get the working environment details for an HA pair.
 
-=== 1. Select the working environment to use
+== 1. Select the working environment to use
 
 Perform the workflow <<Get working environments for single node>> and choose the `publicId` of the required working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the working environment
+== 2. Get the working environment
 
 [cols="25,75"*,options="header"]
 |===

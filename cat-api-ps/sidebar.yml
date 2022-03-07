@@ -1,5 +1,0 @@
-section: cat-api-ps
-title: Platform services APIs
-entries:
-  - section: tenancy
-  - section: persistence

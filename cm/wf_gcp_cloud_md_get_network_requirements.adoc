@@ -16,7 +16,7 @@ summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP
 This workflow retrieves the minimum number of required IPs for a Cloud Volumes ONTAP system.
 
 
-=== 1. Get the network requirements
+== 1. Get the network requirements
 
 [cols="25,75"*,options="header"]
 |===

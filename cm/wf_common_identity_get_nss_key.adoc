@@ -15,15 +15,15 @@ summary: "You can retrieve the key for a specific NetApp Support Site account."
 [.lead]
 You can retrieve the key for a specific NetApp Support Site account.
 
-=== 1. Select the account
+== 1. Select the account
 
 Perform the workflow link:wf_common_identity_get_supported_srv.html[Get supported services] and choose the `accountId` value for the path parameter.
 
-=== 2. Select the NSS key to retrieve
+== 2. Select the NSS key to retrieve
 
 Perform the workflow link:wf_common_identity_get_nss_keys.html[Get NSS keys] and choose the `id` value for the `nssKeyId` path parameter.
 
-=== 3. Retrieve the NSS key
+== 3. Retrieve the NSS key
 
 [cols="25,75"*,options="header"]
 |===

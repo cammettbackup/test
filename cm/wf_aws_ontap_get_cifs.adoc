@@ -23,11 +23,11 @@ Choose the correct workflow depending on the type of the Cloud Volumes ONTAP dep
 == Get CIFS server configuration for single node
 You can use this workflow to retrieve a CIFS server configuration for a single node system.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-working-environments-for-single-node[Get working environments] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the CIFS configurations
+== 2. Get the CIFS configurations
 
 [cols="25,75"*,options="header"]
 |===
@@ -68,11 +68,11 @@ JSON output example::
 == Get CIFS server configuration for high availability pair
 You can use this workflow to retrieve a CIFS server configuration for an HA working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_aws_cloud_get_wes.html#get-working-environment-for-high-availability-pair[Get working environments] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the CIFS configurations
+== 2. Get the CIFS configurations
 
 [cols="25,75"*,options="header"]
 |===

@@ -15,15 +15,15 @@ summary: "You can delete an NetApp Support Site key."
 [.lead]
 You can delete an NetApp Support Site (NSS) key.
 
-=== 1. Select the account to use
+== 1. Select the account to use
 
 Perform the workflow link:wf_common_identity_get_supported_srv.html[Get supported services] and choose the `accountId` value for the path parameter.
 
-=== 2. Select the NSS key to delete
+== 2. Select the NSS key to delete
 
 Perform the workflow link:wf_common_identity_get_nss_keys.html[Get NSS keys] and choose the `id` value for the `nssKeyID` parameter.
 
-=== 3. Delete the NSS keys
+== 3. Delete the NSS keys
 
 [cols="25,75"*,options="header"]
 |===

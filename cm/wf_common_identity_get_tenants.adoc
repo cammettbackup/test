@@ -15,14 +15,14 @@ summary: "You can retrieve a list of tenants visible to the user currently signe
 [.lead]
 You can retrieve a list of tenants visible to the user currently signed in through the account workspace.
 
-=== 1. Get the account identifier
+== 1. Get the account identifier
 
 Perform the workflow link:wf_common_identity_get_supported_srv.html[Get supported services] to retrieve the account ID.
 
 [NOTE]
 You can also get the account identifier through the Cloud Manager web UI. See link:get_client_id.html[Get the client and account identifers] for more information.
 
-=== 2. Get the account workspace
+== 2. Get the account workspace
 
 [cols="25,75"*,options="header"]
 |===

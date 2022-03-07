@@ -23,11 +23,11 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Delete CIFS server configuration for single node
 You can use this workflow to delete CIFS server configuration for a single node system.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_azure_cloud_get_wes.html#get-working-environment-for-single-node[Get working environments] and choose the `publicId` value for the working environment used in the `workingEnvironmentId` path parameter.
 
-=== 2. Delete the CIFS configurations
+== 2. Delete the CIFS configurations
 
 [cols="25,75"*,options="header"]
 |===
@@ -60,11 +60,11 @@ None.
 == Delete CIFS server configuration for high availability pair
 You can use this workflow to delete CIFS server configuration for an HA working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_azure_cloud_get_wes.html#get-working-environment-for-high-availability-pair[Get working environments] and choose the `publicId` value for the working environment used in the `workingEnvironmentId` path parameter.
 
-=== 2. Delete the CIFS configurations
+== 2. Delete the CIFS configurations
 
 [cols="25,75"*,options="header"]
 |===

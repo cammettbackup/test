@@ -15,7 +15,7 @@ summary: "You can retrieve a list of the Cloud Manager accounts available for th
 [.lead]
 You can retrieve a list of the Cloud Manager accounts available for the supported cloud platforms.
 
-=== 1. Get the cloud provider accounts
+== 1. Get the cloud provider accounts
 
 [cols="25,75"*,options="header"]
 |===

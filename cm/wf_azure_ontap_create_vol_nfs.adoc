@@ -23,11 +23,11 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Create volume using NFS for single node
 You can use this workflow to create a volume using NFS protocol for a single node working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_azure_cloud_create_we_paygo.html#create-working-environment-for-single-node[Create working environments] and choose the `publicId` value for the `workingEnvironmentId` parameter in the JSON input.
 
-=== 2. Create the volume
+== 2. Create the volume
 
 [cols="25,75"*,options="header"]
 |===
@@ -88,11 +88,11 @@ None
 
 You can use this workflow to create a volume using NFS protocol for an HA working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_azure_cloud_create_we_paygo.html#create-working-environment-for-high-availability-pair[Create working environments] and choose the `publicId` value for the `workingEnvironmentId` parameter in the JSON input.
 
-=== 2. Create the volume
+== 2. Create the volume
 
 [cols="25,75"*,options="header"]
 |===

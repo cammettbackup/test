@@ -15,47 +15,47 @@ summary: 'You can use this workflow to create a new Cloud Volumes ONTAP working 
 [.lead]
 You can use this workflow to create a new GCP Cloud Volumes ONTAP working environment using pay-as-you-go (PAYGO) subscription.
 
-=====
+====
 *Note the following when using PAYGO*:
 
 * A marketplace subscription is required.
 * A NetApp Support Site (NSS) key is recommended to register the system for support, but it's not required.
 * You can add more volumes after creating the working environment. You can choose to create a volume using either link:wf_gcp_ontap_create_vol_nfs.html[NFS], link:wf_gcp_ontap_create_vol_cifs.html[CIFS], or link:wf_gcp_ontap_create_vol_iscsi.html[iSCSI] protocol.
-=====
+====
 
-=== 1. Select the region
+== 1. Select the region
 Perform the workflow link:wf_gcp_cloud_md_get_regions.html[Get regions] and do the following:
 
 * Choose the `name` value of the required region for the `region` parameter in step 8.
 * Choose one of the VPCs. Choose `name` for `vpcId` parameter and `subnets: path` for `subnetId` and `subnetPath` parameters in step 8.
 
-=== 2. Select the workspace
+== 2. Select the workspace
 Perform the workflow link:wf_common_identity_get_tenants.html[Get tenants] and choose the `workspacePublicId` value for the `tenantId` parameter in step 8.
 
-=== 3. Select the projects
+== 3. Select the projects
 Perform the workflow link:wf_gcp_cloud_md_get_projects.html[Get projects] and choose the `projectId` value of the required project for `project` parameter in step 8.
 
-=== 4. Select the permutations
+== 4. Select the permutations
 Perform the workflow link:wf_gcp_cloud_md_get_permutations.html[Get permutations] and choose the `ontapVersion`, `license: type`, and `instanceType` values of the required `vsaMetadata` parameter in step 8.
 
-=== 5. Select the packages configuration
+== 5. Select the packages configuration
 Perform the workflow link:wf_gcp_cloud_md_get_packages.html[Get packages] and search the `licenseType` from permutations:
 
 * Choose the `name` for `packageName` parameter.
 *	Choose the `diskSize` for `gcpVolumeSize`.
 *	Choose the `diskType` and `writingSpeedState` for the `gcpVolumeType` and `writingSpeedState` parameters.
 
-=== 6. Select the service account
+== 6. Select the service account
 Perform the workflow link:wf_gcp_cloud_md_get_service_accounts.html[Get service accounts] workflow and choose the `email` value of the required service accounts for the `gcpServiceAccount` parameter in step 8.
 
-=== 7. (Optional) Obtain an NSS key
+== 7. (Optional) Obtain an NSS key
 An NSS key is *optional* when using PAYGO subscription. If needed, you can create a key or select an existing key, and include the NSS key in the `nssAccount` parameter in step 8.
 
 * To create a new NSS key using the Cloud Manager web user interface, perform the task link:../platform/get_nss_key.html[Generate NSS user ID] and choose the `id`.
 
 * To select an existing NSS key, perform the link:wf_common_identity_get_nss_keys.html[Get NSS keys] workflow and choose the `id` value of the required NSS user.
 
-=== 8. Create the working environment
+== 8. Create the working environment
 
 [cols="25,75"*,options="header"]
 |===

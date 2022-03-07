@@ -25,7 +25,7 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get Azure regions for single node
 You can perform this workflow to retrieve the Azure regions for a single node working environment.
 
-=== 1. Get the list of regions
+== 1. Get the list of regions
 
 [cols="25,75"*,options="header"]
 |===
@@ -81,7 +81,7 @@ JSON output example::
 == Get Azure regions for high availability pair
 You can perform this workflow to retrieve the Azure regions for an HA working environment.
 
-=== 1. Get the list of regions
+== 1. Get the list of regions
 
 [cols="25,75"*,options="header"]
 |===

@@ -23,7 +23,7 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get EBS volume types for single node
 You can use this workflow to get the EBS volume types for a single node working environment.
 
-=== 1. Get the EBS volume types
+== 1. Get the EBS volume types
 
 [cols="25,75"*,options="header"]
 |===
@@ -108,7 +108,7 @@ JSON output example::
 == Get EBS volume types for high availability pair
 You can use this workflow to get the EBS volume types for an HA working environment.
 
-=== 1. Get the EBS volume types
+== 1. Get the EBS volume types
 
 [cols="25,75"*,options="header"]
 |===

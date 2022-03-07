@@ -23,7 +23,7 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get packages for single node
 You can use this workflow to retrieve the packages information for a single node working environment.
 
-=== 1. Get the packages
+== 1. Get the packages
 
 [cols="25,75"*,options="header"]
 |===
@@ -134,7 +134,7 @@ Output example	[
 
 You can use this workflow to retrieve the packages information for an HA working environment.
 
-=== 1. Get the packages
+== 1. Get the packages
 
 [cols="25,75"*,options="header"]
 |===
@@ -245,7 +245,7 @@ Output example	[
 
 You can use this workflow to retrieve the packages for an HA working environment.
 
-=== 1. Get the packages
+== 1. Get the packages
 
 [cols="25,75"*,options="header"]
 |===

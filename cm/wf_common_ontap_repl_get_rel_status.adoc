@@ -18,7 +18,7 @@ You can use this workflow to retrieve the status of all the SnapMirror replicati
 [NOTE]
 This workflow varies slightly depending on the cloud provider you are using.
 
-=== 1. Optionally select the tenant ID
+== 1. Optionally select the tenant ID
 
 Based on the cloud provider, you need to perform a workflow to get the tenant ID as shown in the following table.
 
@@ -30,7 +30,7 @@ Based on the cloud provider, you need to perform a workflow to get the tenant ID
 |Perform the workflow link:wf_aws_cloud_get_wes.html[Get working environments] and choose the `tenantId` value.
 |===
 
-=== 2. Get the status of the relationships
+== 2. Get the status of the relationships
 
 [cols="25,75"*,options="header"]
 |===

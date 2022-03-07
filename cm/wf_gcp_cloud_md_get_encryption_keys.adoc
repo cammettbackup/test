@@ -15,13 +15,13 @@ summary: This workflow retrieves the AWS regions in which an Cloud Volumes ONTAP
 [.lead]
 This workflow retrieves the GCP encryption keys for a specific region.
 
-=== 1. Select the region
+== 1. Select the region
 Perform the workflow link:wf_gcp_cloud_md_get_regions.html[Get regions] and choose the `name` value of the required region for the `region` path parameter.
 
-=== 2. Select the project
+== 2. Select the project
 Perform the link:[get projects] workflow and choose the `projectId` value of the required project for the `project` path parameter.
 
-=== 3. Get the encryption keys
+== 3. Get the encryption keys
 
 [cols="25,75"*,options="header"]
 |===

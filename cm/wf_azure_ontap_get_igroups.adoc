@@ -23,11 +23,11 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get iGroups for single node
 You can use this workflow to retrieve iGroups for a single node working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_azure_cloud_create_we_paygo.html#create-working-environment-for-single-node[Create Azure single node working environment] and choose the `publicId` and `svmName` values for the working environment `workingEnvironmentId` and `svmName` path parameters.
 
-=== 2. Get the CIFS configurations
+== 2. Get the CIFS configurations
 
 [cols="25,75"*,options="header"]
 |===
@@ -76,11 +76,11 @@ JSON output example::
 == Get iGroups for high availability pair
 You can use this workflow to retrieve iGroups for an HA working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_azure_cloud_get_wes.html#get-working-environment-for-high-availability-pair[Create Azure single node working environment] and choose the `publicId` and `svmName` values for the working environment `workingEnvironmentId` and `svmName` path parameters.
 
-=== 2. Get the CIFS configurations
+== 2. Get the CIFS configurations
 
 [cols="25,75"*,options="header"]
 |===

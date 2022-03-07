@@ -15,11 +15,11 @@ summary: 'You can delete an existing Cloud Volumes ONTAP working environment.'
 [.lead]
 You can delete an existing GCP Cloud Volumes ONTAP working environment.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_gcp_cloud_get_wes.html[Get working environment] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Delete the working environment
+== 2. Delete the working environment
 
 [cols="25,75"*,options="header"]
 |===

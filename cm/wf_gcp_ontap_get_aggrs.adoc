@@ -15,11 +15,11 @@ summary: 'You can retrieve a list of available disk aggregates.'
 [.lead]
 You can retrieve a list of available disk aggregates for Cloud Volumes ONTAP in Google Cloud.
 
-=== 1. Select the working environment
+== 1. Select the working environment
 
 Perform the workflow link:wf_gcp_cloud_get_wes.html[Get working environment] and choose the `publicId` value of the working environment for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the list of aggregates
+== 2. Get the list of aggregates
 
 [cols="25,75"*,options="header"]
 |===

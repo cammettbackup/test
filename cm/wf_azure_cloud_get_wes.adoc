@@ -24,10 +24,10 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get working environment for single node
 You can use this workflow to retrieve the working environments' details of a single node system.
 
-=== 1. Create the working environment
+== 1. Create the working environment
 Perform the link:wf_azure_cloud_create_we_paygo.html#create-working-environment-for-single-node[Create Azure single node working environment] workflow and select the `publicId` from the output for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the working environment
+== 2. Get the working environment
 
 [cols="25,75"*,options="header"]
 |===
@@ -212,10 +212,10 @@ JSON output example::
 == Get working environment for high availability pair
 You can use this workflow to retrieve the working environments' details of an HA working environment.
 
-=== 1. Create an Azure HA working environment
+== 1. Create an Azure HA working environment
 Perform the link:wf_azure_cloud_create_we_paygo.html#create-working-environment-for-high-availability-pair[Create Azure dual node working environment] workflow and select the `publicId` from the output for the `workingEnvironmentId` path parameter.
 
-=== 2. Get the working environment
+== 2. Get the working environment
 
 [cols="25,75"*,options="header"]
 |===

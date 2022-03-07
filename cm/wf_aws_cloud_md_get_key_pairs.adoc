@@ -23,10 +23,10 @@ Choose the correct workflow depending on the type of Cloud Volumes ONTAP deploym
 == Get key pairs for single node
 You can use this workflow to retrieve the key pairs for a single node working environment.
 
-=== 1. Get the region
+== 1. Get the region
 Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-single-node[Get regions] and choose the `code` value of the required region for the `region` query parameter.
 
-=== 2. Get the key pairs
+== 2. Get the key pairs
 
 [cols="25,75"*,options="header"]
 |===
@@ -68,12 +68,12 @@ JSON output example::
 == Get key pairs for high availability pair
 You can use this workflow to retrieve the key pairs for an HA working environment.
 
-=== 1. Get the region
+== 1. Get the region
 Perform the workflow link:wf_aws_cloud_md_get_regions.html#get-regions-for-high-availability-pair[Get regions] and choose the `code` value of the required region for the `region` query parameter.
 
 NOTE: Ensure that you choose the path value for the HA pair while performing the Get Regions workflow.
 
-=== 2. Get the key pairs
+== 2. Get the key pairs
 
 [cols="25,75"*,options="header"]
 |===

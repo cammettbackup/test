@@ -15,7 +15,7 @@ summary: "You can use this workflow to attach a Cloud Manager SaaS subscription 
 [.lead]
 You can use this workflow to attach a Cloud Manager SaaS subscription to a cloud provider account.
 
-=== 1. Select the cloud provider path parameter
+== 1. Select the cloud provider path parameter
 
 Select the cloud provider from the list of allowed values below. You will use this value as the _provider_ path parameter in the curl example in step 4.
 
@@ -23,15 +23,15 @@ Select the cloud provider from the list of allowed values below. You will use th
 * azure
 * gcp
 
-=== 2. Determine the account identifier path parameter
+== 2. Determine the account identifier path parameter
 
 Perform the workflow link:wf_common_identity_get_provider_accounts.html[Get cloud provider accounts] and choose the `accountId` value for the account.
 
-=== 3. Get the SaaS marketplace account
+== 3. Get the SaaS marketplace account
 
 Perform the workflow link:wf_common_identity_get_saas_mp.html[Get SaaS marketplace account] and choose the `id` value for the `subscriptionId` pamater.
 
-=== 4. Attach the subscription
+== 4. Attach the subscription
 
 [cols="25,75"*,options="header"]
 |===
