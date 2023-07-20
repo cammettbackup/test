@@ -1,4 +1,5 @@
 ---
+jekyll: 404-error-page
 settings:
   name: Cloud Insights
   rss_page: concept_whats_new.html
