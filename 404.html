@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <style>
-h1 {
+.title {
     font-size: 25px;
+    margin: 0px;
+    padding: 20px 0;
 }
 
 .container-404 {
@@ -13,8 +15,9 @@ h1 {
 
 p {
     color: rgba(0, 0, 0, 0.5);
-    margin: 20px 0;
+    margin: 0px;
     line-height: 1.6;
+    padding: 20px 0;
 }
 
 .info-404 {
@@ -35,6 +38,9 @@ p {
     transform: rotate(180deg);
     height: 17px;
 }
+.ntap-logo {
+    height: 60px;
+}
 </style>
 <head>
     <meta name="robots" content="noindex" />
@@ -44,16 +50,16 @@ p {
 <p>
     <strong class="info-404">Page Not Found</strong>
 </p>
-<p><h1>404</h1></p>
+<h1 class="title">404</h1>
 <p>
     <a target="_self" class="netapp-site-link" href="docs.netapp.com">
     <text class="netapp-link-text">docs.netapp.com</text>
-    <img class="netapp-link-arrow" src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-0.png" alt="">
+    <img class="netapp-link-arrow" src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/left_arrow.png" alt="">
     </a>
 </p>
-<svg>
-    <use href="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-9.png"></use>
-</svg>
+<p>
+    <img class="ntap-logo" src="images/na_logo.svg" alt="">
+</p>
 </div>
 </body>
 </html>
