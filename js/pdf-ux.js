@@ -17,8 +17,8 @@ $(document).ready(function () {
     
     // remove container class from pdf tree not having any sub child
     $("#toggleContainerPdf li.pdf-ux-container").not(".active").removeClass("pdf-ux-container");
-    // scroll the mysidebar to the current active link
-    $(".sidebar-nav-container").scrollTop(($(".sidebar-nav-container>#mysidebar  li.active:last").offset().top) - ($(".sidebar-nav-container").offset().top + 100));
+
+    
     const pdfUrls = getPdfUrls(zipLevel, baseUrlSection);
     if(pdfUrls.length > 0) {
       zipPdf();

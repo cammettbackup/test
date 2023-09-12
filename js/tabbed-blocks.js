@@ -28,8 +28,8 @@ function createTabs() {
 // Rendering Functions
 
 function createPanel() {  // creates the outer structure that houses the tab content and headers
-    const container = $('<div class="tab-container n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block"></div>');
-    const panel = $(`<div class="panel n-feature-block__content"></div>`);
+    const container = $('<div class="tab-container ie-feature-block ie-feature-block__align--center ie-layout-flex__item ie-feature-block"></div>');
+    const panel = $(`<div class="panel ie-feature-block__content"></div>`);
     const tabBar = $('<div class="tabs ie-feature-block__header"></div>');
     container.append(panel);
     panel.append(tabBar);
@@ -184,10 +184,12 @@ function getCookie(cname) {
 
 // Initialization
 
+/*
 $(document).on('click', function() {  // automatically closes dropdown menus if user clicks elsewhere on screen
   $('.dropdown-menu').hide();
   $('.tab-overflow').find('i').replaceWith('<i class="fa fa-caret-down"></i>');
 });
+*/
 createTabs();
 adjustTabs();
 window.onresize = adjustTabs;

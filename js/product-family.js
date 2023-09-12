@@ -4,9 +4,8 @@ $(document).ready(function () {
     let tileTags = [];
     let tagsMatched = [];
     const tiles = $(".product-family-tile");
-    $('.product-family').parents('.n-off-canvas-menu__content-wrap').addClass('product-family-wrapper');
-    $("#product-family-links").click(function (event) {
-      $("#product-family-links>li.active").removeClass("active");
+    $("#ie-product-family-links a").click(function (event) {
+      $("#ie-product-family-links>li.active").removeClass("active");
         $(event.target).parent().addClass("active");
         $('#selected-sidelink span').text(event.target.text);
       linkTags = event.target

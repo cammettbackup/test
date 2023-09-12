@@ -1,23 +1,7 @@
-window.addEventListener("load", () => {
-    var sidebarDiv = document.getElementById("sidebar-height");
-    var productNavDiv = document.getElementById("product-nav");
-    if (sidebarDiv.contains(productNavDiv)) {
-        document.getElementById("mysidebardiv").classList.remove("with-padding");
-    } else {
-        document.getElementById("mysidebardiv").classList.add("with-padding");
-    }
 
-    let pdfContainer = document.getElementById("toggleContainerPdf");
-    let pdfPageLink = document.getElementById("pdf-remove");
-    if (pdfContainer.contains(pdfPageLink)) {
-        pdfPageLink.remove();
-    }
+$(document).ready(function () {
+  $('#ie-phone-menu-button').click(function () {
+    $('#page').toggleClass('ie-phone-menu-open');
+    $('#ie-content-wrap').toggleClass('ie-phone-menu-open');
+  });
 });
-
-function showSidebar() {
-	$("#page").removeClass("hide-sidebar");
-}
-
-function hideSidebar() {
-	$("#page").addClass("hide-sidebar");
-}
