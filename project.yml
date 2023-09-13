@@ -3,11 +3,12 @@ settings:
   name: Cloud Volumes ONTAP
   harmony_integration: maestro
   platform: cloud
+  downlevel: true
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
-    harmony_enabled: true
+  rss_page: "whats-new.html"
   versions:
     - name: Cloud Volumes ONTAP 
       url: /cloud-volumes-ontap-relnotes
@@ -56,6 +57,7 @@ settings:
       version-number: "9.4"
     - name: ONTAP Cloud
       url: /cloud-volumes-ontap-93-relnotes
+      version-number: "9.3"
       version-number: "9.3"  
   rss_page: "whats-new.html"
   filter:
