@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # cloudinsights
 Cloud Insights Documentation
 
@@ -14,3 +15,6 @@ Remove inefficiencies by identifying abandoned and unused resources and right-si
 *Prevent as much as 80% of cloud issues from impacting end users*
 
 End searching through vast amounts of data to find the relevant piece, by using advanced analytics and machine learning to identify issues before they become critical outages.
+=======
+# bluexp-cloud-volumes-ontap
+>>>>>>> 07e6e6528ec273a3313c0b650c1cac587b11ee83
