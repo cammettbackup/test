@@ -1458,32 +1458,33 @@
     
     
 </div>
-<div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
-    <div class="custom-dropdown-select custom-dropdown-select-contrib">
-    <span class="contrib-name"><img src="/us-en/test/images/discuss-sm.svg" alt="" class="github-icon" /> Suggest changes </span>
-    <img src="/us-en/test/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
-    <img src="/us-en/test/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/us-en/test/images/discuss-sm.svg" alt="" class="github-icon" />Suggest changes</span>
+        <img src="/us-en/test/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/us-en/test/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/test/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/test/task-manage-node-licenses.html&page-title=Manage node-based licenses" class="page-nav-contribute-link" role="button">Request doc changes</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/test/blob/main/task-manage-node-licenses.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
+        </ul>
     </div>
-    <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
-            <a target="_blank" href="https://github.com/NetAppDocs/test/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/test/task-manage-node-licenses.html&page-title=Manage node-based licenses" class="page-nav-contribute-link" role="button">Request doc changes</a>
-        </li><li> 
-            <a target="_blank" href="https://github.com/NetAppDocs/test/blob/main/task-manage-node-licenses.adoc" class="page-nav-contribute-link" role="button">Edit this page</a>
-        </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Learn how to contribute</a></li>
-    </ul>
-</div>  
-<div id="pdf-control-container">
-    <div class="n-pdf-header">
-        <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-            <img class="adobe-icon" src="/us-en/test/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/test/images/dropdown-arrow.svg" class="custom-icon" alt="" />
-        </a>
-    </div>
-    <div class="n-pdf-body-container">
-        <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
-                
-                
-                
-                <a target="_blank" class="pdf-download-link" href="/us-en/test/pdfs/azure/fullsite-sidebar/Cloud_Volumes_ONTAP_documentation.pdf" >
-                <img src="/us-en/test/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/us-en/test/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/us-en/test/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/us-en/test/pdfs/azure/fullsite-sidebar/Cloud_Volumes_ONTAP_documentation.pdf" >
+                    <img src="/us-en/test/images/pdf-icon.png" alt="" width="16" height="16"/>PDF of this doc site</a>
 
 
 
@@ -2236,11 +2237,11 @@
 
 
 </li></ul>
-        <div class="zip-pdf-link-container" style="display: none;">   
-            <a href="#" id="zipPdf">
-            <img src="/us-en/test/images/pdf-zip.png" alt="" width="16" height="16"/>
-            <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
-            </a><div id="zip-link-popup" class="hide">
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/us-en/test/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
         <div class="downloading-progress">
             <div class="spinner"></div>
@@ -2264,8 +2265,8 @@
         $("#zip-link-popup .download-complete").addClass("hide");
     });
 </script></div>
-    </div>    
-</div>
+        </div>
+    </div>        
 <script>
 $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
 $("#toggleButtonPdf").on('click', function(e){ 
@@ -2298,6 +2299,14 @@ $(document).on('click', function (e) {
         getPdfLocation()
 } );
 </script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
 </div>
 
 <div id="preamble">
