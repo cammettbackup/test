@@ -1440,10 +1440,12 @@
         const rightNavbarWidth = $("#ie-right-navbar").width();
         const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
         const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
-
+        
         if (rightNavbarVisible && sidebarVisible) {
             $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
         } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
             if (rightNavbarCollapseVisible) {
                 $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
             } else {
@@ -1451,8 +1453,10 @@
             }
 
         } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
             $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
         } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
             if (rightNavbarCollapseVisible) {
                 $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
             } else {
@@ -1460,7 +1464,6 @@
             }
             
         }
-
     }
     $(window).on("resize load", function () {
         setSidebarBottom();
@@ -1469,6 +1472,7 @@
 
 
 </script>
+
 <div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
     <!-- Begin of page container --><article class="page-content" id="main">
       <!-- include utility.html -->
@@ -2355,6 +2359,7 @@ $(document).on('click', function (e) {
 </div>
 
     
+
 </div>
 
 <div id="preamble">
