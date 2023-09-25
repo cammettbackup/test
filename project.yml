@@ -3,7 +3,6 @@ settings:
   name: Cloud Volumes ONTAP
   harmony_integration: maestro
   platform: cloud
-  downlevel: true
   internal:
     pdf_enabled: true
   prod:
