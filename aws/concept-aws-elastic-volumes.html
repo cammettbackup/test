@@ -24,11 +24,11 @@
 
 
   <!-- Combined CSS -->
-  <link rel="stylesheet" type="text/css" href="/us-en/test/css/netappdocs.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/test/css/ie-netappdocs.css">
 
   
-  <link rel="stylesheet" href="/us-en/test/css/landing-page.css" type="text/css">
-  <link rel="stylesheet" href="/us-en/test/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/test/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/test/css/ie-tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
   <link rel="canonical" href="https://docs.netapp.com/us-en/test/concept-aws-elastic-volumes.html" />
   <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/test/concept-aws-elastic-volumes.html" />
@@ -41,7 +41,7 @@
   <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/test/concept-aws-elastic-volumes.html" />
   <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/test/concept-aws-elastic-volumes.html" />
   <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/test/concept-aws-elastic-volumes.html" />
-  <link rel='stylesheet' href='/us-en/test/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+  <!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
       var adobe = document.createElement("script");
@@ -87,14 +87,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/test/js/na-search.js'></script><!-- moved js to right-navbar.html<script src='/us-en/test/js/na-pagenav.js'></script>-->
-  
- <!--  
-  <link rel='stylesheet' href='/us-en/test/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/us-en/test/css/prism-netapp.css' type='text/css'>
- -->
-
-  <script src='/us-en/test/js/clouddocs.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/test/js/na-search.js'></script><script src='/us-en/test/js/ie-clouddocs.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
     /*
       $(document).ready(function() {
@@ -111,7 +104,7 @@
   <script src='/us-en/test/js/custom-dropdown.js'></script>
   <script src='/us-en/test/js/FileSaver.min.js'></script>
   <script src='/us-en/test/js/jszip-utils.min.js'></script>
-  <script src='/us-en/test/js/jszip.min.js'></script><script src='/us-en/test/js/pdf-ux.js'></script></head>
+  <script src='/us-en/test/js/jszip.min.js'></script><script src='/us-en/test/js/ie-pdf-ux.js'></script></head>
 
 
   <body class role="document" data-flavor="aws">
@@ -135,8 +128,10 @@
             <a href="https://www.netapp.com/support-and-training/documentation/">Docs</a>
         </li>
 
-        <!-- Start Language Selector -->
-        <!-- true delete-after-finishing-new-design --><li id="ie-language-dropdown" style="margin-left: auto">
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
             <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
                 <div class="custom-dropdown-select custom-dropdown-select-lang">
                     <img src="/us-en/test/images/language_white_24dp.svg" class="n-globe__icon" />
@@ -2873,8 +2868,8 @@ $(document).on('click', function (e) {
       cookieLaw.euCountry = "US";
       cookieLaw.invoke = function(){return false;}
     </script>
-    <script src='/us-en/test/js/tabbed-blocks.js'></script>
-    <script src='/us-en/test/js/sidebar.js'></script>
+    <script src='/us-en/test/js/ie-tabbed-blocks.js'></script>
+    <script src='/us-en/test/js/ie-sidebar.js'></script>
   </body>
 
 </html>
