@@ -13,7 +13,7 @@ summary: You can reduce storage costs for Cloud Volumes ONTAP by combining an SS
 :imagesdir: ./media/
 
 [.lead]
-You can reduce storage costs for Cloud Volumes ONTAP by combining an SSD or HDD performance tier for hot data with an object storage capacity tier for inactive data. Data tiering is powered by FabricPool technology. For a high-level overview, see link:concept-data-tiering.html[Data tiering overview].
+You can reduce storage costs for Cloud Volumes ONTAP by combining an SSD or HDD performance tier for hot data with an object storage capacity tier for inactive data. Data tiering is powered by FabricPool technology. For a high-level overview, see link:concept-data-tiering.html[Data tiering overview]. I'm making an edit.
 
 To set up data tiering, you need to do the following:
 
